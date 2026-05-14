@@ -12,5 +12,3 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Source files (if not needed)
-src/
