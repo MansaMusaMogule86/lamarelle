@@ -14,91 +14,144 @@
     <a class="font-headline-md text-headline-md font-bold tracking-tight text-primary" href="index.html">La Marelle</a>
     <div class="hidden md:flex items-center gap-lg">
       <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="index.html">About</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Programs</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Admissions</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="programs.html">Programs</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="admissions.html">Admissions</a>
       <a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="facilities.html">Facilities</a>
       <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="facilities.html#gallery">Gallery</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Blog</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Contact</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="blog.html">Blog</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
     </div>
     <div class="flex items-center gap-sm">
-      <a href="progress.html" class="hidden md:block text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors">Parent Portal</a>
-      <button class="bg-primary text-on-primary px-md py-sm rounded-full font-label-sm text-label-sm hover:scale-105 transition-transform duration-300 active:scale-95">
+      <a href="overview.html" class="hidden md:block text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors">Parent Portal</a>
+      <a href="admissions.html" class="bg-primary text-on-primary px-md py-sm rounded-full font-label-sm text-label-sm hover:scale-105 transition-transform duration-300 active:scale-95">
         Book a Tour
-      </button>
+      </a>
     </div>
   </nav>
 </header>
 
-<main class="pt-[120px]">
+<main class="pt-[120px] overflow-hidden">
   <!-- Hero -->
-  <section class="max-w-container-max mx-auto px-margin-mobile md:px-lg mb-xl">
+  <section class="max-w-container-max mx-auto px-margin-mobile md:px-lg mb-xl relative">
+    <!-- Decorative background blobs -->
+    <div class="absolute -top-20 -left-20 w-64 h-64 bg-secondary-container rounded-full mix-blend-multiply filter blur-3xl opacity-50 z-[-1]" style="border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;"></div>
+    <div class="absolute top-10 -right-10 w-72 h-72 bg-primary-container rounded-full mix-blend-multiply filter blur-3xl opacity-50 z-[-1]" style="border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;"></div>
+    
     <div class="text-center space-y-md fade-up">
       <span class="inline-block px-md py-xs bg-secondary-container text-on-secondary-container rounded-full font-label-sm text-label-sm uppercase tracking-widest">The Campus</span>
-      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg max-w-3xl mx-auto">Where curiosity finds its home in every corner.</h1>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg max-w-3xl mx-auto text-primary">Where curiosity finds its home in every corner.</h1>
       <p class="font-editorial-italic text-editorial-italic text-on-surface-variant max-w-2xl mx-auto italic">A sanctuary of natural light, tactile textures, and boundless inspiration designed for the early years.</p>
     </div>
   </section>
 
-  <!-- Bento Gallery Grid -->
-  <section id="gallery" class="max-w-container-max mx-auto px-margin-mobile md:px-lg mb-xl">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-      <!-- Large Feature: The Atelier -->
-      <div class="md:col-span-8 group bento-hover relative overflow-hidden rounded-xl h-[500px] bg-surface-container">
-        <img alt="Creative Studio" class="w-full h-full object-cover transition-soft hover-zoom"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIP3sMZIfQhepwe7AER85pmV_nMdJelE1SGrB34lUOwTajbsnzQq6ouJwjeSNkk2O93F89lD2J9iK0oWGqnfvEox2XvAeKu9WrEnSTLHrbbn7j4wWg4q1z_D_gYLnSoU9f4NDqyQxtucfedC8liJHGhiR5Z3RxeutO3aIu2TnQ5UibdxwWP-M7ITR9Ybp2ll-bWIRuOPAHPOX4s06QZ0R3sQB5jgJhX0yy_uvdS4LOmIoPvRuYt_aOWv2VmyYCSTAMcXY68wklXOk"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-lg">
-          <h3 class="text-white font-headline-md text-headline-md mb-base">The Atelier</h3>
-          <p class="text-white/80 font-body-md text-body-md max-w-md">A light-filled laboratory for the arts, where messy play meets refined expression through clay, paint, and light tables.</p>
-        </div>
+  <!-- Our Building -->
+  <section class="max-w-container-max mx-auto px-margin-mobile md:px-lg mb-xl grid grid-cols-1 md:grid-cols-2 gap-xl items-center relative">
+    <div class="fade-up order-2 md:order-1 relative z-10">
+      <h2 class="font-display-lg text-primary mb-md" style="font-family: 'Comic Sans MS', cursive, sans-serif;">our Building</h2>
+      <p class="font-body-md text-on-surface-variant mb-md">On the ground floor, you will find the reception area, classrooms, and the library, along with a dedicated playroom for children aged 3 months to 3 years.</p>
+      <p class="font-body-md text-on-surface-variant">On the first floor, you will find the kindergarten classrooms and a dedicated motor skills room for children aged 3 to 5 years.</p>
+    </div>
+    <div class="fade-up order-1 md:order-2 relative">
+      <!-- Decorative star SVG -->
+      <svg class="absolute -top-10 -right-6 w-16 h-16 text-primary animate-spin-slow z-20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4">
+        <path d="M50 10 L50 90 M10 50 L90 50 M20 20 L80 80 M20 80 L80 20" stroke-linecap="round"/>
+      </svg>
+      <!-- Blob Image -->
+      <div class="w-full aspect-square overflow-hidden bg-primary-container relative z-10 shadow-lg" style="border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;">
+        <img alt="Our Building Playroom" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDINfnJcITyG_VAcPstseCDa51rXg7uB2Dae1ng5rcFY78NJuhnjK2R4lsxMaI484kVVxD3PdCIZ2BUqM1fOHshaUZs86Hp_PrW6jxuNAWvtgUouzb7Ak1LoQKD3rKICmFGtkIio3KpoEXHbl7T2iOlEE1Ljts6KqtV0n5GL1H7SUxTlMhchtUnZ0W9ujqSN7xZ435UljrKliy9eZYfe714ehrjBXN0VojzCQTT5nLvPayUpv0OIRWb9ghD7L-eY3HCF_qDPbUJIY" />
       </div>
-      <!-- Tall Feature: Organic Garden -->
-      <div class="md:col-span-4 group bento-hover relative overflow-hidden rounded-xl h-[500px] bg-surface-container">
-        <img alt="Organic Garden" class="w-full h-full object-cover transition-soft hover-zoom"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdgux1hlJVNXgLyxx6pAh1rxkzwCIsoUzT7AGlU0_YFK5Cs55gRgVdQEH6t0QeTTMaVbAGXj5SK85mHQ58dZKmJyISKU1n6bX_IoUgEUDoMgxKzOz7w3WX2q34Zmk27vA43azOSBklWk9ix85m-K0w0vNODEFU3gQvQ9c2HqP7QPxEoBi81pd2GW9UIwp8WuOVv3Akylysc18DZEX4I3Abzau8prcjviA_jhCs2lM6jLEwAKRY_svIzLJgE-vj5O3VGyIhMlRn-wo"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-lg">
-          <h3 class="text-white font-headline-md text-headline-md mb-base">The Living Garden</h3>
-          <p class="text-white/80 font-body-md text-body-md">Nurturing a connection with the earth through tactile sensory paths and seasonal vegetable patches.</p>
-        </div>
-      </div>
-      <!-- Square: Library -->
-      <div class="md:col-span-4 group bento-hover relative overflow-hidden rounded-xl h-[400px] bg-surface-container">
-        <img alt="Library" class="w-full h-full object-cover transition-soft hover-zoom"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEo_qykkhgdSq5H2dU_Am817V2BsDPTyLBvaq3XxlPUglpTQ8k3nXW0zc7VnEXeYM065mAddX14iCHRp-JX9NVJ_UEkKrq9_qzd-4xbzRPTzwhT3oytDa2FzmaSEGoPVy6e7JT0kqxFsHj2J2caziZVDifuBtk7EYb90w4WIFCPBt-5zy2GFyx2r5BlM4AfVEgBCJYK_fp2g68dyuNo-ukwlJEyT59Iar1zcUr4b46KPo_6s6ImcN69ll70Mrvx6JDQVef2CMSS3Y"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-lg">
-          <h3 class="text-white font-headline-md text-headline-md mb-base">Language Lounge</h3>
-          <p class="text-white/80 font-body-md text-body-md">A quiet retreat curated with global literature to spark bilingual wonder and deep focus.</p>
-        </div>
-      </div>
-      <!-- Wide: Indoor Play -->
-      <div class="md:col-span-8 group bento-hover relative overflow-hidden rounded-xl h-[400px] bg-surface-container">
-        <img alt="Indoor Play" class="w-full h-full object-cover transition-soft hover-zoom"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDINfnJcITyG_VAcPstseCDa51rXg7uB2Dae1ng5rcFY78NJuhnjK2R4lsxMaI484kVVxD3PdCIZ2BUqM1fOHshaUZs86Hp_PrW6jxuNAWvtgUouzb7Ak1LoQKD3rKICmFGtkIio3KpoEXHbl7T2iOlEE1Ljts6KqtV0n5GL1H7SUxTlMhchtUnZ0W9ujqSN7xZ435UljrKliy9eZYfe714ehrjBXN0VojzCQTT5nLvPayUpv0OIRWb9ghD7L-eY3HCF_qDPbUJIY"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-lg">
-          <h3 class="text-white font-headline-md text-headline-md mb-base">Dynamic Hall</h3>
-          <p class="text-white/80 font-body-md text-body-md max-w-lg">Engineered for movement, this space features architectural climbing structures that challenge and inspire confidence.</p>
-        </div>
+      <!-- Background blob color block -->
+      <div class="absolute inset-0 bg-secondary-container transform scale-110 translate-x-4 translate-y-4 z-0" style="border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;"></div>
+    </div>
+  </section>
+
+  <!-- Neurosciences (As shown in screenshot) -->
+  <section class="max-w-container-max mx-auto px-margin-mobile md:px-lg mb-24 grid grid-cols-1 md:grid-cols-2 gap-xl items-center relative">
+    <div class="fade-up order-1 md:order-2 relative z-10">
+      <h2 class="font-display-lg text-secondary mb-md" style="font-family: 'Comic Sans MS', cursive, sans-serif;">Neurosciences</h2>
+      <p class="font-body-md text-on-surface-variant mb-md">In addition to the educational requirements imposed by the Ministry, we rely heavily on neuroscience research to complement our educational methodologies.</p>
+      <p class="font-body-md text-on-surface-variant">The Dolto, Freinet and Montessori methods have shown a clear link between a child's environment, emotional climate and the development of key areas of the brain. We integrate the teachings of these pedagogies into our daily practices.</p>
+    </div>
+    <div class="fade-up order-2 md:order-1 relative">
+      <!-- Decorative star SVG -->
+      <svg class="absolute -top-6 -left-6 w-12 h-12 text-secondary animate-spin-slow z-20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4">
+        <path d="M50 10 L50 90 M10 50 L90 50 M20 20 L80 80 M20 80 L80 20" stroke-linecap="round"/>
+      </svg>
+      <!-- Blob Image -->
+      <div class="w-full max-w-md mx-auto aspect-[4/3] overflow-hidden bg-secondary-container relative z-10 shadow-lg" style="border-radius: 30% 70% 50% 50% / 50% 30% 70% 50%;">
+        <img alt="Neurosciences methodology" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIP3sMZIfQhepwe7AER85pmV_nMdJelE1SGrB34lUOwTajbsnzQq6ouJwjeSNkk2O93F89lD2J9iK0oWGqnfvEox2XvAeKu9WrEnSTLHrbbn7j4wWg4q1z_D_gYLnSoU9f4NDqyQxtucfedC8liJHGhiR5Z3RxeutO3aIu2TnQ5UibdxwWP-M7ITR9Ybp2ll-bWIRuOPAHPOX4s06QZ0R3sQB5jgJhX0yy_uvdS4LOmIoPvRuYt_aOWv2VmyYCSTAMcXY68wklXOk" />
       </div>
     </div>
   </section>
 
-  <!-- Area Descriptions -->
-  <section class="bg-surface-container-low py-xl">
-    <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg grid grid-cols-1 md:grid-cols-3 gap-lg">
-      <div class="space-y-sm fade-up">
-        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">spa</span>
-        <h4 class="font-headline-md text-headline-md text-primary">Biophilic Design</h4>
-        <p class="font-body-md text-body-md text-on-surface-variant">Our campus uses organic materials and living walls to reduce stress and improve cognitive function, creating a truly restorative space for growth.</p>
+  <!-- Our Little Extras (Blue Background) -->
+  <section class="bg-[#38bdf8] py-24 relative overflow-hidden text-white">
+    <!-- White wave SVG top -->
+    <div class="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
+      <svg class="relative block w-[calc(100%+1.3px)] h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-background"></path>
+      </svg>
+    </div>
+
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
+      <h2 class="text-5xl md:text-6xl text-center mb-16 fade-up" style="font-family: 'Comic Sans MS', cursive, sans-serif;">Our Little Extras</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Extra 1 -->
+        <div class="text-center fade-up">
+          <div class="w-56 h-56 mx-auto mb-6 overflow-hidden bg-white shadow-xl" style="border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%; transition: border-radius 0.3s ease;" onmouseover="this.style.borderRadius='60% 40% 30% 70% / 60% 30% 70% 40%'" onmouseout="this.style.borderRadius='40% 60% 60% 40% / 70% 30% 70% 30%'">
+            <img alt="Motor Skills Room" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDINfnJcITyG_VAcPstseCDa51rXg7uB2Dae1ng5rcFY78NJuhnjK2R4lsxMaI484kVVxD3PdCIZ2BUqM1fOHshaUZs86Hp_PrW6jxuNAWvtgUouzb7Ak1LoQKD3rKICmFGtkIio3KpoEXHbl7T2iOlEE1Ljts6KqtV0n5GL1H7SUxTlMhchtUnZ0W9ujqSN7xZ435UljrKliy9eZYfe714ehrjBXN0VojzCQTT5nLvPayUpv0OIRWb9ghD7L-eY3HCF_qDPbUJIY" />
+          </div>
+          <h3 class="text-2xl mb-4 font-bold" style="font-family: 'Comic Sans MS', cursive, sans-serif;">Motor Skills Room</h3>
+          <p class="text-white/90 text-sm leading-relaxed">Used daily by all six classes for motor development activities, dance initiation, gymnastics, and yoga, fostering coordination and physical confidence.</p>
+        </div>
+        <!-- Extra 2 -->
+        <div class="text-center fade-up delay-100">
+          <div class="w-56 h-56 mx-auto mb-6 overflow-hidden bg-white shadow-xl" style="border-radius: 50% 50% 70% 30% / 30% 60% 40% 70%; transition: border-radius 0.3s ease;" onmouseover="this.style.borderRadius='30% 70% 50% 50% / 50% 30% 70% 50%'" onmouseout="this.style.borderRadius='50% 50% 70% 30% / 30% 60% 40% 70%'">
+            <img alt="Playroom" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdgux1hlJVNXgLyxx6pAh1rxkzwCIsoUzT7AGlU0_YFK5Cs55gRgVdQEH6t0QeTTMaVbAGXj5SK85mHQ58dZKmJyISKU1n6bX_IoUgEUDoMgxKzOz7w3WX2q34Zmk27vA43azOSBklWk9ix85m-K0w0vNODEFU3gQvQ9c2HqP7QPxEoBi81pd2GW9UIwp8WuOVv3Akylysc18DZEX4I3Abzau8prcjviA_jhCs2lM6jLEwAKRY_svIzLJgE-vj5O3VGyIhMlRn-wo" />
+          </div>
+          <h3 class="text-2xl mb-4 font-bold" style="font-family: 'Comic Sans MS', cursive, sans-serif;">Playroom</h3>
+          <p class="text-white/90 text-sm leading-relaxed">A space designed to nurture children's independence, creativity, and social bonds. It supports various forms of play, including role-playing and hands-on activities.</p>
+        </div>
+        <!-- Extra 3 -->
+        <div class="text-center fade-up delay-200">
+          <div class="w-56 h-56 mx-auto mb-6 overflow-hidden bg-white shadow-xl" style="border-radius: 30% 70% 50% 50% / 50% 30% 70% 50%; transition: border-radius 0.3s ease;" onmouseover="this.style.borderRadius='40% 60% 60% 40% / 70% 30% 70% 30%'" onmouseout="this.style.borderRadius='30% 70% 50% 50% / 50% 30% 70% 50%'">
+            <img alt="Library" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEo_qykkhgdSq5H2dU_Am817V2BsDPTyLBvaq3XxlPUglpTQ8k3nXW0zc7VnEXeYM065mAddX14iCHRp-JX9NVJ_UEkKrq9_qzd-4xbzRPTzwhT3oytDa2FzmaSEGoPVy6e7JT0kqxFsHj2J2caziZVDifuBtk7EYb90w4WIFCPBt-5zy2GFyx2r5BlM4AfVEgBCJYK_fp2g68dyuNo-ukwlJEyT59Iar1zcUr4b46KPo_6s6ImcN69ll70Mrvx6JDQVef2CMSS3Y" />
+          </div>
+          <h3 class="text-2xl mb-4 font-bold" style="font-family: 'Comic Sans MS', cursive, sans-serif;">Library</h3>
+          <p class="text-white/90 text-sm leading-relaxed">A haven where books enrich children's language and vocabulary skills. Here, they learn to express themselves, comprehend others, and explore new ideas.</p>
+        </div>
       </div>
-      <div class="space-y-sm fade-up">
-        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">light_mode</span>
-        <h4 class="font-headline-md text-headline-md text-primary">Luminous Spaces</h4>
-        <p class="font-body-md text-body-md text-on-surface-variant">Strategically angled windows ensure that natural daylight follows the children's rhythm throughout the day, supporting healthy circadian cycles.</p>
+    </div>
+    
+    <!-- White wave SVG bottom -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+      <svg class="relative block w-[calc(100%+1.3px)] h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-background"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Gallery Grid (Square Photos Row) -->
+  <section id="gallery" class="max-w-container-max mx-auto px-margin-mobile md:px-lg py-xl">
+    <h2 class="text-4xl md:text-5xl text-center text-[#38bdf8] mb-12 fade-up" style="font-family: 'Comic Sans MS', cursive, sans-serif;">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-sm fade-up">
+      <!-- We use the existing 4 photos from original gallery -->
+      <div class="aspect-square overflow-hidden bg-surface-container shadow-md group">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIP3sMZIfQhepwe7AER85pmV_nMdJelE1SGrB34lUOwTajbsnzQq6ouJwjeSNkk2O93F89lD2J9iK0oWGqnfvEox2XvAeKu9WrEnSTLHrbbn7j4wWg4q1z_D_gYLnSoU9f4NDqyQxtucfedC8liJHGhiR5Z3RxeutO3aIu2TnQ5UibdxwWP-M7ITR9Ybp2ll-bWIRuOPAHPOX4s06QZ0R3sQB5jgJhX0yy_uvdS4LOmIoPvRuYt_aOWv2VmyYCSTAMcXY68wklXOk" alt="Gallery 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
       </div>
-      <div class="space-y-sm fade-up">
-        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">shield_with_heart</span>
-        <h4 class="font-headline-md text-headline-md text-primary">Unseen Safety</h4>
-        <p class="font-body-md text-body-md text-on-surface-variant">World-class safety is integrated into the architecture through rounded corners, hypoallergenic surfaces, and medical-grade air filtration systems.</p>
+      <div class="aspect-square overflow-hidden bg-surface-container shadow-md group">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdgux1hlJVNXgLyxx6pAh1rxkzwCIsoUzT7AGlU0_YFK5Cs55gRgVdQEH6t0QeTTMaVbAGXj5SK85mHQ58dZKmJyISKU1n6bX_IoUgEUDoMgxKzOz7w3WX2q34Zmk27vA43azOSBklWk9ix85m-K0w0vNODEFU3gQvQ9c2HqP7QPxEoBi81pd2GW9UIwp8WuOVv3Akylysc18DZEX4I3Abzau8prcjviA_jhCs2lM6jLEwAKRY_svIzLJgE-vj5O3VGyIhMlRn-wo" alt="Gallery 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+      </div>
+      <div class="aspect-square overflow-hidden bg-surface-container shadow-md group">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEo_qykkhgdSq5H2dU_Am817V2BsDPTyLBvaq3XxlPUglpTQ8k3nXW0zc7VnEXeYM065mAddX14iCHRp-JX9NVJ_UEkKrq9_qzd-4xbzRPTzwhT3oytDa2FzmaSEGoPVy6e7JT0kqxFsHj2J2caziZVDifuBtk7EYb90w4WIFCPBt-5zy2GFyx2r5BlM4AfVEgBCJYK_fp2g68dyuNo-ukwlJEyT59Iar1zcUr4b46KPo_6s6ImcN69ll70Mrvx6JDQVef2CMSS3Y" alt="Gallery 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+      </div>
+      <div class="aspect-square overflow-hidden bg-surface-container shadow-md group relative">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDINfnJcITyG_VAcPstseCDa51rXg7uB2Dae1ng5rcFY78NJuhnjK2R4lsxMaI484kVVxD3PdCIZ2BUqM1fOHshaUZs86Hp_PrW6jxuNAWvtgUouzb7Ak1LoQKD3rKICmFGtkIio3KpoEXHbl7T2iOlEE1Ljts6KqtV0n5GL1H7SUxTlMhchtUnZ0W9ujqSN7xZ435UljrKliy9eZYfe714ehrjBXN0VojzCQTT5nLvPayUpv0OIRWb9ghD7L-eY3HCF_qDPbUJIY" alt="Gallery 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+        <!-- Next button overlay for gallery -->
+        <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors shadow-lg">
+          <span class="material-symbols-outlined text-on-surface">chevron_right</span>
+        </button>
       </div>
     </div>
   </section>
@@ -109,9 +162,9 @@
       <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Experience it in person</h2>
       <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Photos only tell part of the story. Feel the textures, breathe the air, and witness the magic of La Marelle firsthand.</p>
       <div class="pt-md flex flex-col sm:flex-row gap-md justify-center">
-        <button class="bg-primary text-on-primary px-lg py-md rounded-full font-headline-md text-headline-md hover:scale-105 transition-transform duration-300 active:scale-95 shadow-lg">
+        <a href="admissions.html" class="bg-primary text-on-primary px-lg py-md rounded-full font-headline-md text-headline-md hover:scale-105 transition-transform duration-300 active:scale-95 shadow-lg">
           Schedule a Private Visit
-        </button>
+        </a>
         <a href="index.html" class="border border-outline text-on-surface px-lg py-md rounded-full font-headline-md text-headline-md hover:bg-surface-container transition-all">
           Back to Home
         </a>
@@ -131,29 +184,30 @@
       <h5 class="text-on-surface font-bold mb-md font-body-md text-body-md">Navigation</h5>
       <ul class="space-y-xs">
         <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="index.html">About</a></li>
-        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Programs</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="programs.html">Programs</a></li>
         <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="facilities.html">Facilities</a></li>
       </ul>
     </div>
     <div>
       <h5 class="text-on-surface font-bold mb-md font-body-md text-body-md">Support</h5>
       <ul class="space-y-xs">
-        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Contact</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="contact.html">Contact</a></li>
         <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#gallery">Gallery</a></li>
-        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Blog</a></li>
-        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="progress.html">Parent Portal</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="blog.html">Blog</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="overview.html">Parent Portal</a></li>
       </ul>
     </div>
     <div>
       <h5 class="text-on-surface font-bold mb-md font-body-md text-body-md">Contact</h5>
-      <p class="text-on-surface-variant font-label-sm text-label-sm mb-xs">123 Nursery Lane, Paris</p>
-      <p class="text-on-surface-variant font-label-sm text-label-sm">hello@lamarelle.com</p>
+      <p class="text-on-surface-variant font-label-sm text-label-sm mb-xs">82 Al Shaari Street, Jumeirah 3, Dubai</p>
+      <p class="text-on-surface-variant font-label-sm text-label-sm">contact@lamarelle.ae</p>
     </div>
   </div>
   <div class="max-w-container-max mx-auto px-margin-mobile md:px-xl mt-xl pt-md border-t border-outline-variant text-center">
-    <p class="text-on-surface-variant font-label-sm text-label-sm opacity-60">© 2024 La Marelle Nursery. All rights reserved.</p>
+    <p class="text-on-surface-variant font-label-sm text-label-sm opacity-60">© 2026 La Marelle Nursery Dubai. All rights reserved.</p>
   </div>
 </footer>
+
 
 <script type="module" src="/src/js/main.js"></script>
 </body>
