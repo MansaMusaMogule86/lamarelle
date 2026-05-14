@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Messages | La Marelle Parent Portal</title>
+<link rel="stylesheet" href="/src/css/style.css"/>
+<style>
+  .message-bubble-in {
+    background: #f6f3f2;
+    border-radius: 4px 18px 18px 18px;
+    max-width: 80%;
+  }
+  .message-bubble-out {
+    background: #5f5e5a;
+    color: white;
+    border-radius: 18px 4px 18px 18px;
+    max-width: 80%;
+    margin-left: auto;
+  }
+  .thread-item {
+    transition: background 0.2s;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 12px;
+  }
+  .thread-item:hover { background: #f0eded; }
+  .thread-item.active { background: #eadecd; }
+</style>
+</head>
+<body class="font-body-md text-on-surface">
+
+<!-- Mobile TopNavBar -->
+<header class="lg:hidden fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm px-margin-mobile h-20 flex justify-between items-center">
+  <a href="index.html" class="font-editorial-italic text-primary italic tracking-tight text-editorial-italic">La Marelle Nursery</a>
+  <div class="flex gap-sm">
+    <span class="material-symbols-outlined text-primary">notifications</span>
+    <span class="material-symbols-outlined text-primary">account_circle</span>
+  </div>
+</header>
+
+<!-- Desktop SideNavBar -->
+<aside class="hidden lg:flex flex-col h-screen w-80 fixed left-0 top-0 bg-surface-container-low p-gutter gap-lg shadow-md z-40">
+  <div class="flex flex-col gap-xs">
+    <div class="flex items-center gap-sm">
+      <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">child_care</span>
+      </div>
+      <div>
+        <h1 class="font-editorial-italic text-editorial-italic text-primary">La Marelle</h1>
+        <p class="font-label-sm text-label-sm text-on-surface-variant">Nursery Portal</p>
+      </div>
+    </div>
+  </div>
+  <nav class="flex-1 flex flex-col gap-sm">
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="overview.html">
+      <span class="material-symbols-outlined">dashboard</span>
+      <span class="font-label-sm text-label-sm">Overview</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="childs-day.html">
+      <span class="material-symbols-outlined">auto_stories</span>
+      <span class="font-label-sm text-label-sm">Child's Day</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="progress.html">
+      <span class="material-symbols-outlined">analytics</span>
+      <span class="font-label-sm text-label-sm">Progress Reports</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="calendar.html">
+      <span class="material-symbols-outlined">calendar_today</span>
+      <span class="font-label-sm text-label-sm">Calendar</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="billing.html">
+      <span class="material-symbols-outlined">payments</span>
+      <span class="font-label-sm text-label-sm">Billing</span>
+    </a>
+    <a class="flex items-center gap-sm bg-secondary-container text-on-secondary-container rounded-lg px-md py-sm font-bold scale-[1.02]" href="messages.html">
+      <span class="material-symbols-outlined">chat_bubble</span>
+      <span class="font-label-sm text-label-sm">Messages</span>
+    </a>
+  </nav>
+  <button class="bg-primary text-on-primary py-sm rounded-lg font-bold hover:opacity-90 transition-opacity">
+    Report Absence
+  </button>
+  <div class="flex flex-col gap-xs pt-lg border-t border-outline-variant">
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm rounded-lg" href="#">
+      <span class="material-symbols-outlined">settings</span>
+      <span class="font-label-sm text-label-sm">Settings</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm rounded-lg" href="index.html">
+      <span class="material-symbols-outlined">home</span>
+      <span class="font-label-sm text-label-sm">Public Site</span>
+    </a>
+  </div>
+</aside>
+
+<!-- Main Content -->
+<main class="lg:ml-80 pt-24 lg:pt-0 p-margin-mobile md:p-xl min-h-screen">
+  <div class="max-w-container-max mx-auto">
+
+    <!-- Page Header -->
+    <header class="flex flex-col md:flex-row md:items-center justify-between gap-md mb-xl">
+      <div>
+        <h2 class="font-display-lg-mobile md:text-display-lg font-display-lg text-on-background">Messages</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mt-sm">Stay connected with Leo's educators</p>
+      </div>
+      <button class="bg-primary text-on-primary px-lg py-sm rounded-full font-label-sm text-label-sm flex items-center gap-sm self-start hover:opacity-90 transition-opacity">
+        <span class="material-symbols-outlined text-sm">edit</span>
+        New message
+      </button>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter h-[calc(100vh-260px)] min-h-[500px]">
+
+      <!-- Thread List -->
+      <aside class="lg:col-span-4 bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm overflow-hidden flex flex-col fade-up">
+        <!-- Search -->
+        <div class="p-md border-b border-outline-variant">
+          <div class="flex items-center gap-sm bg-surface-container-high rounded-full px-md py-sm">
+            <span class="material-symbols-outlined text-on-surface-variant text-sm">search</span>
+            <input type="text" placeholder="Search messages…" class="bg-transparent flex-1 outline-none font-label-sm text-label-sm text-on-surface placeholder:text-on-surface-variant"/>
+          </div>
+        </div>
+        <!-- Threads -->
+        <div class="flex-1 overflow-y-auto p-sm hide-scrollbar">
+          <!-- Active thread -->
+          <div class="thread-item active mb-xs">
+            <div class="flex items-start gap-sm">
+              <div class="w-10 h-10 rounded-full overflow-hidden shrink-0">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpSRPXyR66DXP3hltkQ6konW3zHDmww3xUHlMqDNextd_XC5iUlfRcR6N4ryMW-Dzcb8QtOWBCL45rnhIRuawu4dgF9ZcATXJDnBlBRU3hJeNISf-Bt9SORH2qJpr_ckrxSgzn7v26BQOakEEv28B3jiCX5t2FQcHDeL_yYeQrwsTKuUBgkL8a-lym__1E-5B-Fshs3JoBW5XKXGu4ofLWpWOzCwRa1rd-Q3ZNucBXqriVWTXxmalXkrPkCKYkDXqHuFlVKLWjbtQ" alt="Ms Clara" class="w-full h-full object-cover"/>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-baseline justify-between">
+                  <p class="font-body-md text-body-md font-semibold truncate">Ms. Clara Fontaine</p>
+                  <span class="font-label-sm text-[10px] text-on-surface-variant shrink-0 ml-xs">Today</span>
+                </div>
+                <p class="font-label-sm text-label-sm text-on-surface-variant truncate">He was so creative with colour-mixing today! 🎨</p>
+              </div>
+              <div class="w-2 h-2 rounded-full bg-primary shrink-0 mt-1"></div>
+            </div>
+          </div>
+
+          <div class="thread-item mb-xs">
+            <div class="flex items-start gap-sm">
+              <div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center shrink-0 font-bold text-tertiary">D</div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-baseline justify-between">
+                  <p class="font-body-md text-body-md font-semibold truncate">Mr. David Moreau</p>
+                  <span class="font-label-sm text-[10px] text-on-surface-variant shrink-0 ml-xs">Mon</span>
+                </div>
+                <p class="font-label-sm text-label-sm text-on-surface-variant truncate">Great work on the alphabet sounds today!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="thread-item mb-xs">
+            <div class="flex items-start gap-sm">
+              <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 font-bold text-on-secondary-container">LM</div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-baseline justify-between">
+                  <p class="font-body-md text-body-md font-semibold truncate">La Marelle Admin</p>
+                  <span class="font-label-sm text-[10px] text-on-surface-variant shrink-0 ml-xs">May 10</span>
+                </div>
+                <p class="font-label-sm text-label-sm text-on-surface-variant truncate">Spring Festival — family reminder 🌸</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="thread-item mb-xs">
+            <div class="flex items-start gap-sm">
+              <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shrink-0 font-bold text-primary">S</div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-baseline justify-between">
+                  <p class="font-body-md text-body-md font-semibold truncate">Ms. Sophie (Music)</p>
+                  <span class="font-label-sm text-[10px] text-on-surface-variant shrink-0 ml-xs">May 7</span>
+                </div>
+                <p class="font-label-sm text-label-sm text-on-surface-variant truncate">Leo played his first full song on the xylophone!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="thread-item mb-xs">
+            <div class="flex items-start gap-sm">
+              <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 font-bold text-on-surface-variant">N</div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-baseline justify-between">
+                  <p class="font-body-md text-body-md font-semibold truncate">Nurse Nadia</p>
+                  <span class="font-label-sm text-[10px] text-on-surface-variant shrink-0 ml-xs">Apr 29</span>
+                </div>
+                <p class="font-label-sm text-label-sm text-on-surface-variant truncate">Leo's annual health check is due in June</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Chat Pane -->
+      <section class="lg:col-span-8 bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm overflow-hidden flex flex-col fade-up">
+
+        <!-- Chat Header -->
+        <div class="flex items-center gap-md p-lg border-b border-outline-variant shrink-0">
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpSRPXyR66DXP3hltkQ6konW3zHDmww3xUHlMqDNextd_XC5iUlfRcR6N4ryMW-Dzcb8QtOWBCL45rnhIRuawu4dgF9ZcATXJDnBlBRU3hJeNISf-Bt9SORH2qJpr_ckrxSgzn7v26BQOakEEv28B3jiCX5t2FQcHDeL_yYeQrwsTKuUBgkL8a-lym__1E-5B-Fshs3JoBW5XKXGu4ofLWpWOzCwRa1rd-Q3ZNucBXqriVWTXxmalXkrPkCKYkDXqHuFlVKLWjbtQ" alt="Ms Clara" class="w-full h-full object-cover"/>
+          </div>
+          <div class="flex-1">
+            <p class="font-body-md text-body-md font-semibold">Ms. Clara Fontaine</p>
+            <div class="flex items-center gap-xs">
+              <div class="w-2 h-2 rounded-full bg-green-500"></div>
+              <p class="font-label-sm text-label-sm text-on-surface-variant">Online · Lead educator, Les Grands</p>
+            </div>
+          </div>
+          <div class="flex gap-sm">
+            <button class="w-10 h-10 rounded-full hover:bg-surface-container-high transition-colors flex items-center justify-center">
+              <span class="material-symbols-outlined text-on-surface-variant">phone</span>
+            </button>
+            <button class="w-10 h-10 rounded-full hover:bg-surface-container-high transition-colors flex items-center justify-center">
+              <span class="material-symbols-outlined text-on-surface-variant">info</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="flex-1 overflow-y-auto p-lg flex flex-col gap-lg hide-scrollbar">
+
+          <!-- Date separator -->
+          <div class="flex items-center gap-md">
+            <div class="flex-1 h-px bg-outline-variant"></div>
+            <span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Monday, 12 May</span>
+            <div class="flex-1 h-px bg-outline-variant"></div>
+          </div>
+
+          <!-- Incoming -->
+          <div class="flex gap-sm items-end">
+            <div class="w-8 h-8 rounded-full overflow-hidden shrink-0">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpSRPXyR66DXP3hltkQ6konW3zHDmww3xUHlMqDNextd_XC5iUlfRcR6N4ryMW-Dzcb8QtOWBCL45rnhIRuawu4dgF9ZcATXJDnBlBRU3hJeNISf-Bt9SORH2qJpr_ckrxSgzn7v26BQOakEEv28B3jiCX5t2FQcHDeL_yYeQrwsTKuUBgkL8a-lym__1E-5B-Fshs3JoBW5XKXGu4ofLWpWOzCwRa1rd-Q3ZNucBXqriVWTXxmalXkrPkCKYkDXqHuFlVKLWjbtQ" alt="Clara" class="w-full h-full object-cover"/>
+            </div>
+            <div>
+              <div class="message-bubble-in px-md py-sm mb-xs">
+                <p class="font-body-md text-body-md">Bonjour Sophie! Just a reminder about the Spring Festival on June 6th — all families are invited from 10:00. Leo has been practising a little surprise 🌸</p>
+              </div>
+              <p class="font-label-sm text-[10px] text-on-surface-variant ml-sm">09:12</p>
+            </div>
+          </div>
+
+          <!-- Outgoing -->
+          <div class="flex flex-col items-end">
+            <div class="message-bubble-out px-md py-sm mb-xs">
+              <p class="font-body-md text-body-md">That sounds wonderful! We'll be there. Will there be parking available?</p>
+            </div>
+            <p class="font-label-sm text-[10px] text-on-surface-variant mr-sm">09:34</p>
+          </div>
+
+          <!-- Incoming -->
+          <div class="flex gap-sm items-end">
+            <div class="w-8 h-8 rounded-full overflow-hidden shrink-0">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpSRPXyR66DXP3hltkQ6konW3zHDmww3xUHlMqDNextd_XC5iUlfRcR6N4ryMW-Dzcb8QtOWBCL45rnhIRuawu4dgF9ZcATXJDnBlBRU3hJeNISf-Bt9SORH2qJpr_ckrxSgzn7v26BQOakEEv28B3jiCX5t2FQcHDeL_yYeQrwsTKuUBgkL8a-lym__1E-5B-Fshs3JoBW5XKXGu4ofLWpWOzCwRa1rd-Q3ZNucBXqriVWTXxmalXkrPkCKYkDXqHuFlVKLWjbtQ" alt="Clara" class="w-full h-full object-cover"/>
+            </div>
+            <div>
+              <div class="message-bubble-in px-md py-sm mb-xs">
+                <p class="font-body-md text-body-md">Yes! There's a temporary car park on Rue Verte — we'll send directions in the event email. 🚗</p>
+              </div>
+              <p class="font-label-sm text-[10px] text-on-surface-variant ml-sm">09:41</p>
+            </div>
+          </div>
+
+          <!-- Date separator -->
+          <div class="flex items-center gap-md">
+            <div class="flex-1 h-px bg-outline-variant"></div>
+            <span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Today, 14 May</span>
+            <div class="flex-1 h-px bg-outline-variant"></div>
+          </div>
+
+          <!-- Incoming -->
+          <div class="flex gap-sm items-end">
+            <div class="w-8 h-8 rounded-full overflow-hidden shrink-0">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpSRPXyR66DXP3hltkQ6konW3zHDmww3xUHlMqDNextd_XC5iUlfRcR6N4ryMW-Dzcb8QtOWBCL45rnhIRuawu4dgF9ZcATXJDnBlBRU3hJeNISf-Bt9SORH2qJpr_ckrxSgzn7v26BQOakEEv28B3jiCX5t2FQcHDeL_yYeQrwsTKuUBgkL8a-lym__1E-5B-Fshs3JoBW5XKXGu4ofLWpWOzCwRa1rd-Q3ZNucBXqriVWTXxmalXkrPkCKYkDXqHuFlVKLWjbtQ" alt="Clara" class="w-full h-full object-cover"/>
+            </div>
+            <div>
+              <div class="message-bubble-in px-md py-sm mb-xs">
+                <p class="font-body-md text-body-md">Good morning! Leo arrived happy and full of energy today. He's been so creative with colour-mixing in our watercolour session — asking really thoughtful questions! 🎨</p>
+              </div>
+              <p class="font-label-sm text-[10px] text-on-surface-variant ml-sm">08:52</p>
+            </div>
+          </div>
+
+          <!-- Outgoing -->
+          <div class="flex flex-col items-end">
+            <div class="message-bubble-out px-md py-sm mb-xs">
+              <p class="font-body-md text-body-md">That's so lovely to hear! He was talking about watercolours at breakfast this morning 😄 Thank you for the update!</p>
+            </div>
+            <div class="flex items-center gap-xs">
+              <p class="font-label-sm text-[10px] text-on-surface-variant mr-xs">09:05 · Read</p>
+              <span class="material-symbols-outlined text-primary text-sm">done_all</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message Input -->
+        <div class="p-lg border-t border-outline-variant shrink-0">
+          <div class="flex items-end gap-md bg-surface-container-high rounded-2xl px-lg py-md">
+            <button class="text-on-surface-variant hover:text-primary transition-colors shrink-0">
+              <span class="material-symbols-outlined">attach_file</span>
+            </button>
+            <textarea 
+              id="message-input"
+              placeholder="Write a message to Ms. Clara…" 
+              rows="1"
+              class="flex-1 bg-transparent outline-none resize-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant leading-relaxed"
+              style="max-height: 120px; overflow-y: auto;"
+            ></textarea>
+            <button class="bg-primary text-on-primary w-10 h-10 rounded-full flex items-center justify-center hover:opacity-90 transition-opacity shrink-0">
+              <span class="material-symbols-outlined text-sm">send</span>
+            </button>
+          </div>
+          <p class="font-label-sm text-[10px] text-on-surface-variant text-center mt-sm">
+            Messages are shared securely with nursery staff only.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<!-- Mobile BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface/80 backdrop-blur-xl flex justify-around items-center h-20 z-50 px-margin-mobile">
+  <a href="overview.html" class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">dashboard</span>
+    <span class="font-label-sm text-[10px]">Overview</span>
+  </a>
+  <a href="childs-day.html" class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">auto_stories</span>
+    <span class="font-label-sm text-[10px]">Today</span>
+  </a>
+  <a href="progress.html" class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">analytics</span>
+    <span class="font-label-sm text-[10px]">Progress</span>
+  </a>
+  <a href="calendar.html" class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">calendar_today</span>
+    <span class="font-label-sm text-[10px]">Calendar</span>
+  </a>
+  <a href="messages.html" class="flex flex-col items-center gap-xs text-primary">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">chat_bubble</span>
+    <span class="font-label-sm text-[10px] font-bold">Chat</span>
+  </a>
+</nav>
+
+<script type="module" src="/src/js/main.js"></script>
+<script>
+  // Auto-grow textarea
+  const ta = document.getElementById('message-input');
+  if (ta) {
+    ta.addEventListener('input', () => {
+      ta.style.height = 'auto';
+      ta.style.height = Math.min(ta.scrollHeight, 120) + 'px';
+    });
+  }
+</script>
+</body>
+</html>
