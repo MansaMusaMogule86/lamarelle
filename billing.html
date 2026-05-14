@@ -72,7 +72,7 @@
 </aside>
 
 <!-- Main Content -->
-<main class="lg:ml-80 pt-24 lg:pt-0 p-margin-mobile md:p-xl min-h-screen">
+<main class="lg:ml-80 pt-24 lg:pt-0 p-margin-mobile pb-24 md:p-xl min-h-screen">
   <div class="max-w-container-max mx-auto">
 
     <!-- Page Header -->
@@ -127,8 +127,9 @@
           </div>
         </div>
 
+        <div class="overflow-x-auto -mx-lg px-lg">
         <!-- Table Header -->
-        <div class="grid grid-cols-12 gap-sm py-sm border-b border-outline-variant mb-sm">
+        <div class="grid grid-cols-12 gap-sm py-sm border-b border-outline-variant mb-sm min-w-[420px]">
           <div class="col-span-2 font-label-sm text-label-sm text-on-surface-variant">Date</div>
           <div class="col-span-4 font-label-sm text-label-sm text-on-surface-variant">Description</div>
           <div class="col-span-2 font-label-sm text-label-sm text-on-surface-variant text-right">Amount</div>
@@ -137,7 +138,7 @@
         </div>
 
         <!-- Invoice Rows -->
-        <div class="flex flex-col divide-y divide-outline-variant/50">
+        <div class="flex flex-col divide-y divide-outline-variant/50 min-w-[420px]">
           <!-- Upcoming -->
           <div class="grid grid-cols-12 gap-sm py-md items-center">
             <div class="col-span-2 font-label-sm text-label-sm text-on-surface-variant">Jun 1</div>
@@ -245,6 +246,7 @@
             </div>
           </div>
         </div>
+        </div><!-- /overflow-x-auto -->
       </section>
 
       <!-- Sidebar: Payment Method + Plan -->

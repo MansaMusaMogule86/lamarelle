@@ -21,7 +21,24 @@
     </div>
     <div class="flex items-center gap-sm">
       <a href="overview.html" class="hidden md:block text-on-surface-variant hover:text-primary font-label-sm transition-colors">Parent Portal</a>
-      <a href="admissions.html" class="bg-primary text-on-primary px-md py-sm rounded-full font-label-sm hover:scale-105 transition-transform">Book a Tour</a>
+      <a href="admissions.html" class="hidden sm:inline-flex bg-primary text-on-primary px-md py-sm rounded-full font-label-sm hover:scale-105 transition-transform">Book a Tour</a>
+      <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" aria-label="Toggle menu">
+        <span class="material-symbols-outlined text-on-surface" id="menu-icon">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="hidden fixed inset-x-0 top-[72px] bottom-0 bg-surface z-40 flex flex-col px-lg py-lg overflow-y-auto md:hidden">
+    <a class="flex items-center justify-between py-md border-b border-outline-variant font-headline-md text-headline-md text-on-surface" href="index.html">About</a>
+    <a class="flex items-center justify-between py-md border-b border-outline-variant font-headline-md text-headline-md text-on-surface" href="programs.html">Programs</a>
+    <a class="flex items-center justify-between py-md border-b border-outline-variant font-headline-md text-headline-md text-on-surface" href="admissions.html">Admissions</a>
+    <a class="flex items-center justify-between py-md border-b border-outline-variant font-headline-md text-headline-md text-on-surface" href="facilities.html">Facilities</a>
+    <a class="flex items-center justify-between py-md border-b border-outline-variant font-headline-md text-headline-md text-on-surface" href="blog.html">Blog</a>
+    <a class="flex items-center justify-between py-md border-b border-outline-variant font-headline-md text-headline-md text-on-surface" href="contact.html">Contact</a>
+    <div class="mt-lg flex flex-col gap-md">
+      <a href="overview.html" class="text-center py-md border border-outline-variant rounded-full font-label-sm text-label-sm text-on-surface-variant">Parent Portal</a>
+      <a href="admissions.html" class="text-center bg-primary text-on-primary py-md rounded-full font-label-sm text-label-sm">Book a Tour</a>
     </div>
   </div>
 </nav>
