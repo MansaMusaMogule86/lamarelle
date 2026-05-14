@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Progress Reports | La Marelle Nursery</title>
+<link rel="stylesheet" href="/src/css/style.css"/>
+</head>
+<body class="font-body-md text-on-surface">
+
+<!-- Mobile TopNavBar -->
+<header class="lg:hidden fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm px-margin-mobile h-20 flex justify-between items-center">
+  <a href="index.html" class="font-editorial-italic text-primary italic tracking-tight text-editorial-italic">La Marelle Nursery</a>
+  <div class="flex gap-sm">
+    <span class="material-symbols-outlined text-primary">notifications</span>
+    <span class="material-symbols-outlined text-primary">account_circle</span>
+  </div>
+</header>
+
+<!-- Desktop SideNavBar -->
+<aside class="hidden lg:flex flex-col h-screen w-80 fixed left-0 top-0 bg-surface-container-low p-gutter gap-lg shadow-md z-40">
+  <div class="flex flex-col gap-xs">
+    <div class="flex items-center gap-sm">
+      <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">child_care</span>
+      </div>
+      <div>
+        <h1 class="font-editorial-italic text-editorial-italic text-primary">La Marelle</h1>
+        <p class="font-label-sm text-label-sm text-on-surface-variant">Nursery Portal</p>
+      </div>
+    </div>
+  </div>
+  <nav class="flex-1 flex flex-col gap-sm">
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="#">
+      <span class="material-symbols-outlined">dashboard</span>
+      <span class="font-label-sm text-label-sm">Overview</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="#">
+      <span class="material-symbols-outlined">auto_stories</span>
+      <span class="font-label-sm text-label-sm">Child's Day</span>
+    </a>
+    <a class="flex items-center gap-sm bg-secondary-container text-on-secondary-container rounded-lg px-md py-sm font-bold scale-[1.02] transition-transform" href="progress.html">
+      <span class="material-symbols-outlined">analytics</span>
+      <span class="font-label-sm text-label-sm">Progress Reports</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="#">
+      <span class="material-symbols-outlined">calendar_today</span>
+      <span class="font-label-sm text-label-sm">Calendar</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="#">
+      <span class="material-symbols-outlined">payments</span>
+      <span class="font-label-sm text-label-sm">Billing</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="#">
+      <span class="material-symbols-outlined">chat_bubble</span>
+      <span class="font-label-sm text-label-sm">Messages</span>
+    </a>
+  </nav>
+  <button class="bg-primary text-on-primary py-sm rounded-lg font-bold hover:opacity-90 transition-opacity">
+    Report Absence
+  </button>
+  <div class="flex flex-col gap-xs pt-lg border-t border-outline-variant">
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm rounded-lg" href="#">
+      <span class="material-symbols-outlined">settings</span>
+      <span class="font-label-sm text-label-sm">Settings</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm rounded-lg" href="index.html">
+      <span class="material-symbols-outlined">home</span>
+      <span class="font-label-sm text-label-sm">Public Site</span>
+    </a>
+  </div>
+</aside>
+
+<!-- Main Content -->
+<main class="lg:ml-80 pt-24 lg:pt-0 p-margin-mobile md:p-xl min-h-screen">
+  <div class="max-w-container-max mx-auto">
+
+    <!-- Page Header -->
+    <header class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-xl">
+      <div>
+        <h2 class="font-display-lg-mobile md:text-display-lg font-display-lg text-on-background">Progress Reports</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mt-sm">Developmental Journey for <span class="text-primary font-bold">Leo</span></p>
+      </div>
+      <div class="flex items-center gap-sm">
+        <div class="bg-surface-container-high rounded-full px-md py-sm flex items-center gap-xs cursor-pointer hover:bg-surface-container-highest transition-colors">
+          <span class="font-label-sm text-label-sm">Autumn Term 2023</span>
+          <span class="material-symbols-outlined text-sm">expand_more</span>
+        </div>
+        <button class="bg-primary text-on-primary px-md py-sm rounded-full font-label-sm text-label-sm flex items-center gap-xs hover:scale-95 transition-transform">
+          <span class="material-symbols-outlined">download</span>
+          Download Full Term Report
+        </button>
+      </div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+
+      <!-- Term Summary -->
+      <section class="lg:col-span-8 bg-surface-container-lowest rounded-lg p-lg shadow-sm border border-surface-container">
+        <div class="flex items-center gap-sm mb-md">
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img alt="Teacher Avatar" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpSRPXyR66DXP3hltkQ6konW3zHDmww3xUHlMqDNextd_XC5iUlfRcR6N4ryMW-Dzcb8QtOWBCL45rnhIRuawu4dgF9ZcATXJDnBlBRU3hJeNISf-Bt9SORH2qJpr_ckrxSgzn7v26BQOakEEv28B3jiCX5t2FQcHDeL_yYeQrwsTKuUBgkL8a-lym__1E-5B-Fshs3JoBW5XKXGu4ofLWpWOzCwRa1rd-Q3ZNucBXqriVWTXxmalXkrPkCKYkDXqHuFlVKLWjbtQ"/>
+          </div>
+          <div>
+            <h3 class="font-headline-md text-headline-md">Term Summary</h3>
+            <p class="font-label-sm text-label-sm text-on-surface-variant">Lead Teacher: Sarah Jenkins</p>
+          </div>
+        </div>
+        <p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          Leo has shown remarkable growth this term, particularly in his social interactions and linguistic confidence. He has transitioned from solitary play to actively initiating group activities, demonstrating a natural leadership quality. His vocabulary has expanded significantly, and he is now constructing complex sentences to describe his creative projects. We are delighted with his curiosity and the empathetic way he engages with his peers during collective storytime sessions.
+        </p>
+        <div class="mt-lg grid grid-cols-1 md:grid-cols-2 gap-sm">
+          <div class="bg-primary-container p-md rounded-lg">
+            <span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Key Strength</span>
+            <p class="font-headline-md text-headline-md mt-xs">Empathetic Communication</p>
+          </div>
+          <div class="bg-tertiary-container p-md rounded-lg">
+            <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Major Milestone</span>
+            <p class="font-headline-md text-headline-md mt-xs">Numerical Sequencing 1–20</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Milestones -->
+      <section class="lg:col-span-4 flex flex-col gap-gutter">
+        <div class="bg-inverse-surface text-on-tertiary rounded-lg p-lg shadow-md flex-1">
+          <h3 class="font-headline-md text-headline-md mb-md">Next Milestones</h3>
+          <ul class="flex flex-col gap-md">
+            <li class="flex gap-sm">
+              <div class="mt-1 w-6 h-6 rounded-full border border-tertiary-fixed flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </div>
+              <div>
+                <h4 class="font-label-sm text-label-sm font-bold">Spatial Reasoning</h4>
+                <p class="font-body-md text-sm text-primary-fixed opacity-80">Beginning to interpret complex 3D maps and building blueprints.</p>
+              </div>
+            </li>
+            <li class="flex gap-sm">
+              <div class="mt-1 w-6 h-6 rounded-full border border-tertiary-fixed flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </div>
+              <div>
+                <h4 class="font-label-sm text-label-sm font-bold">Collaborative Narratives</h4>
+                <p class="font-body-md text-sm text-primary-fixed opacity-80">Creating shared stories with peers during role-play activities.</p>
+              </div>
+            </li>
+            <li class="flex gap-sm">
+              <div class="mt-1 w-6 h-6 rounded-full border border-tertiary-fixed flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+              </div>
+              <div>
+                <h4 class="font-label-sm text-label-sm font-bold">Fine Motor Control</h4>
+                <p class="font-body-md text-sm text-primary-fixed opacity-80">Mastering precision grip with various artistic tools and mediums.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Developmental Domains -->
+      <section class="lg:col-span-12">
+        <h3 class="font-headline-md text-headline-md mb-lg">Developmental Domains</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <!-- Language & Literacy -->
+          <div class="bg-surface-container-lowest p-lg rounded-lg border border-surface-container shadow-sm">
+            <div class="flex justify-between items-center mb-md">
+              <span class="material-symbols-outlined text-primary">menu_book</span>
+              <span class="bg-secondary-container text-on-secondary-container px-sm py-1 rounded-full font-label-sm text-[10px]">EXCEEDING</span>
+            </div>
+            <h4 class="font-headline-md text-headline-md mb-sm">Language &amp; Literacy</h4>
+            <div class="w-full bg-surface-container-high h-2 rounded-full mb-xs">
+              <div class="bg-primary h-full rounded-full w-[85%] progress-bar-glow transition-all duration-1000"></div>
+            </div>
+            <p class="text-right font-label-sm text-label-sm text-on-surface-variant">85% Competency</p>
+          </div>
+          <!-- Mathematical Thinking -->
+          <div class="bg-surface-container-lowest p-lg rounded-lg border border-surface-container shadow-sm">
+            <div class="flex justify-between items-center mb-md">
+              <span class="material-symbols-outlined text-primary">calculate</span>
+              <span class="bg-tertiary-container text-on-tertiary-container px-sm py-1 rounded-full font-label-sm text-[10px]">ON TRACK</span>
+            </div>
+            <h4 class="font-headline-md text-headline-md mb-sm">Mathematical Thinking</h4>
+            <div class="w-full bg-surface-container-high h-2 rounded-full mb-xs">
+              <div class="bg-tertiary h-full rounded-full w-[72%] progress-bar-glow transition-all duration-1000"></div>
+            </div>
+            <p class="text-right font-label-sm text-label-sm text-on-surface-variant">72% Competency</p>
+          </div>
+          <!-- Social-Emotional -->
+          <div class="bg-surface-container-lowest p-lg rounded-lg border border-surface-container shadow-sm">
+            <div class="flex justify-between items-center mb-md">
+              <span class="material-symbols-outlined text-primary">favorite</span>
+              <span class="bg-secondary-container text-on-secondary-container px-sm py-1 rounded-full font-label-sm text-[10px]">EXCEEDING</span>
+            </div>
+            <h4 class="font-headline-md text-headline-md mb-sm">Social-Emotional</h4>
+            <div class="w-full bg-surface-container-high h-2 rounded-full mb-xs">
+              <div class="bg-secondary h-full rounded-full w-[90%] progress-bar-glow transition-all duration-1000"></div>
+            </div>
+            <p class="text-right font-label-sm text-label-sm text-on-surface-variant">90% Competency</p>
+          </div>
+          <!-- Physical Growth -->
+          <div class="bg-surface-container-lowest p-lg rounded-lg border border-surface-container shadow-sm">
+            <div class="flex justify-between items-center mb-md">
+              <span class="material-symbols-outlined text-primary">directions_run</span>
+              <span class="bg-tertiary-container text-on-tertiary-container px-sm py-1 rounded-full font-label-sm text-[10px]">ON TRACK</span>
+            </div>
+            <h4 class="font-headline-md text-headline-md mb-sm">Physical Growth</h4>
+            <div class="w-full bg-surface-container-high h-2 rounded-full mb-xs">
+              <div class="bg-primary h-full rounded-full w-[68%] progress-bar-glow transition-all duration-1000"></div>
+            </div>
+            <p class="text-right font-label-sm text-label-sm text-on-surface-variant">68% Competency</p>
+          </div>
+          <!-- Creative Arts -->
+          <div class="bg-surface-container-lowest p-lg rounded-lg border border-surface-container shadow-sm">
+            <div class="flex justify-between items-center mb-md">
+              <span class="material-symbols-outlined text-primary">palette</span>
+              <span class="bg-secondary-container text-on-secondary-container px-sm py-1 rounded-full font-label-sm text-[10px]">EXCEEDING</span>
+            </div>
+            <h4 class="font-headline-md text-headline-md mb-sm">Creative Arts</h4>
+            <div class="w-full bg-surface-container-high h-2 rounded-full mb-xs">
+              <div class="bg-secondary h-full rounded-full w-[82%] progress-bar-glow transition-all duration-1000"></div>
+            </div>
+            <p class="text-right font-label-sm text-label-sm text-on-surface-variant">82% Competency</p>
+          </div>
+          <!-- Export Card -->
+          <div class="bg-surface-container-high p-lg rounded-lg border-2 border-dashed border-outline-variant flex flex-col items-center justify-center text-center">
+            <span class="material-symbols-outlined text-lg mb-sm">summarize</span>
+            <p class="font-label-sm text-label-sm mb-sm">Export all domain details</p>
+            <button class="text-primary font-bold hover:underline">Get Detailed Breakdown</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teacher Observations -->
+      <section class="lg:col-span-12 mt-xl">
+        <div class="flex items-center justify-between mb-lg">
+          <h3 class="font-headline-md text-headline-md">Teacher Observations</h3>
+          <button class="text-primary flex items-center gap-xs font-label-sm text-label-sm">
+            See All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </button>
+        </div>
+        <div class="flex flex-col gap-md">
+          <!-- Observation 1 -->
+          <div class="glass-card p-lg rounded-lg flex flex-col md:flex-row gap-lg shadow-sm">
+            <div class="md:w-48 flex-shrink-0">
+              <p class="font-label-sm text-label-sm text-primary uppercase">Oct 12, 2023</p>
+              <p class="font-body-md text-sm text-on-surface-variant">Observation by Ms. Clara</p>
+            </div>
+            <div class="flex-1">
+              <h4 class="font-headline-md text-headline-md mb-sm">Moment of Empathy</h4>
+              <p class="font-body-lg text-body-lg">
+                Leo showed great empathy today by sharing his favourite wooden blocks with a new student who was feeling a bit shy. He calmly explained how to build a "skyscraper" and stayed by their side for the duration of free-play. It was a beautiful display of emotional maturity.
+              </p>
+            </div>
+            <div class="w-full md:w-32 h-32 rounded-lg overflow-hidden bg-surface-container flex-shrink-0">
+              <img alt="Block Play" class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqgRq3iBP-UB79BRY0kRQuu7hJwBVacgW5C6LyE49MhHliRf-pUadRL6wNPxySdqRVxLgzE5AVRFF-SHNZTctppF1M6CkoYQX40KICkZrEXm6lV8dg_WyW5vb7LFB7G27fmYZJVCVfRm7GsjqKPA4Y59dZIgDVoq_6OuTIhNVxkYhDywu_inEwHVYus_aulKN6u7EC-QmSRlQdc7uvWT5810xdXtzs7ZaZSjT95N8vfPoFJo3WKfX2SlPbWQWQI0nRV0Rw7Tg1S2I"/>
+            </div>
+          </div>
+          <!-- Observation 2 -->
+          <div class="glass-card p-lg rounded-lg flex flex-col md:flex-row gap-lg shadow-sm">
+            <div class="md:w-48 flex-shrink-0">
+              <p class="font-label-sm text-label-sm text-primary uppercase">Sep 28, 2023</p>
+              <p class="font-body-md text-sm text-on-surface-variant">Observation by Mr. David</p>
+            </div>
+            <div class="flex-1">
+              <h4 class="font-headline-md text-headline-md mb-sm">Early Literacy Spark</h4>
+              <p class="font-body-lg text-body-lg">
+                During reading time, Leo correctly identified all letter sounds in his own name and attempted to trace them in the sand tray. He is showing a keen interest in the relationship between symbols and sounds, often asking "What does this letter say?" when looking at picture books.
+              </p>
+            </div>
+            <div class="w-full md:w-32 h-32 rounded-lg overflow-hidden bg-surface-container flex-shrink-0">
+              <img alt="Letter tracing" class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-KifNirqzNg7WjuNOQ5QiTz8wNH9Z9IbnqfFfHZtoTSC-E_SD1RS8fbs_12so5b758bdoWAyewHMA3ZpXnmtGZCvP26328gG4Tdkqtif55AUuX5tKE8Zrz_O9m20CcXmoGDshNWWla7iAdu4Vz1mTRmG9fbV6emad3uKkLp-Nmhyi_1HRzzi4fMcH4hFL74XIHZXXQ3M12jJCoT6oDH0KPlNQtFd8dLuKMMNccOvzYo37GDzQ9VvF8Q7i69gsgGAnazuTnUYL3zY"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<!-- Mobile BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface/80 backdrop-blur-xl flex justify-around items-center h-20 z-50 px-margin-mobile">
+  <a href="index.html" class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">home</span>
+    <span class="font-label-sm text-[10px]">Home</span>
+  </a>
+  <div class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">dashboard</span>
+    <span class="font-label-sm text-[10px]">Overview</span>
+  </div>
+  <div class="flex flex-col items-center gap-xs text-primary">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">analytics</span>
+    <span class="font-label-sm text-[10px] font-bold">Progress</span>
+  </div>
+  <div class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">calendar_today</span>
+    <span class="font-label-sm text-[10px]">Calendar</span>
+  </div>
+  <div class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">chat_bubble</span>
+    <span class="font-label-sm text-[10px]">Chat</span>
+  </div>
+</nav>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

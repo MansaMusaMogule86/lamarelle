@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Overview | La Marelle Parent Portal</title>
+<link rel="stylesheet" href="/src/css/style.css"/>
+</head>
+<body class="font-body-md text-on-surface">
+
+<!-- Mobile TopNavBar -->
+<header class="lg:hidden fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm px-margin-mobile h-20 flex justify-between items-center">
+  <a href="index.html" class="font-editorial-italic text-primary italic tracking-tight text-editorial-italic">La Marelle Nursery</a>
+  <div class="flex gap-sm">
+    <span class="material-symbols-outlined text-primary">notifications</span>
+    <span class="material-symbols-outlined text-primary">account_circle</span>
+  </div>
+</header>
+
+<!-- Desktop SideNavBar -->
+<aside class="hidden lg:flex flex-col h-screen w-80 fixed left-0 top-0 bg-surface-container-low p-gutter gap-lg shadow-md z-40">
+  <div class="flex flex-col gap-xs">
+    <div class="flex items-center gap-sm">
+      <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">child_care</span>
+      </div>
+      <div>
+        <h1 class="font-editorial-italic text-editorial-italic text-primary">La Marelle</h1>
+        <p class="font-label-sm text-label-sm text-on-surface-variant">Nursery Portal</p>
+      </div>
+    </div>
+  </div>
+  <nav class="flex-1 flex flex-col gap-sm">
+    <a class="flex items-center gap-sm bg-secondary-container text-on-secondary-container rounded-lg px-md py-sm font-bold scale-[1.02] transition-transform" href="overview.html">
+      <span class="material-symbols-outlined">dashboard</span>
+      <span class="font-label-sm text-label-sm">Overview</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="childs-day.html">
+      <span class="material-symbols-outlined">auto_stories</span>
+      <span class="font-label-sm text-label-sm">Child's Day</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="progress.html">
+      <span class="material-symbols-outlined">analytics</span>
+      <span class="font-label-sm text-label-sm">Progress Reports</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="calendar.html">
+      <span class="material-symbols-outlined">calendar_today</span>
+      <span class="font-label-sm text-label-sm">Calendar</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="billing.html">
+      <span class="material-symbols-outlined">payments</span>
+      <span class="font-label-sm text-label-sm">Billing</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm hover:bg-surface-container-high transition-all duration-300 rounded-lg" href="messages.html">
+      <span class="material-symbols-outlined">chat_bubble</span>
+      <span class="font-label-sm text-label-sm">Messages</span>
+    </a>
+  </nav>
+  <button class="bg-primary text-on-primary py-sm rounded-lg font-bold hover:opacity-90 transition-opacity">
+    Report Absence
+  </button>
+  <div class="flex flex-col gap-xs pt-lg border-t border-outline-variant">
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm rounded-lg" href="#">
+      <span class="material-symbols-outlined">settings</span>
+      <span class="font-label-sm text-label-sm">Settings</span>
+    </a>
+    <a class="flex items-center gap-sm text-on-surface-variant hover:text-primary px-md py-sm rounded-lg" href="index.html">
+      <span class="material-symbols-outlined">home</span>
+      <span class="font-label-sm text-label-sm">Public Site</span>
+    </a>
+  </div>
+</aside>
+
+<!-- Main Content -->
+<main class="lg:ml-80 pt-24 lg:pt-0 p-margin-mobile md:p-xl min-h-screen">
+  <div class="max-w-container-max mx-auto">
+
+    <!-- Page Header -->
+    <header class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-xl">
+      <div>
+        <h2 class="font-display-lg-mobile md:text-display-lg font-display-lg text-on-background">Good morning, Sophie</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mt-sm">Here's how <span class="text-primary font-bold">Leo</span> is doing today</p>
+      </div>
+      <div class="flex items-center gap-sm">
+        <div class="bg-surface-container-high rounded-full px-md py-sm flex items-center gap-xs">
+          <span class="w-2 h-2 rounded-full bg-green-500 inline-block"></span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">Leo is at nursery</span>
+        </div>
+        <span class="font-label-sm text-label-sm text-on-surface-variant">Thursday, 14 May 2026</span>
+      </div>
+    </header>
+
+    <!-- Top Stats Row -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter mb-xl">
+      <div class="bg-primary-container rounded-xl p-lg fade-up flex flex-col gap-sm">
+        <div class="flex items-center justify-between">
+          <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">sentiment_very_satisfied</span>
+          <span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Mood Today</span>
+        </div>
+        <p class="font-display-lg-mobile text-display-lg-mobile text-on-background">😊</p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant">Cheerful & energetic</p>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-lg fade-up border border-surface-container flex flex-col gap-sm">
+        <div class="flex items-center justify-between">
+          <span class="material-symbols-outlined text-tertiary" style="font-variation-settings:'FILL' 1">lunch_dining</span>
+          <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Lunch</span>
+        </div>
+        <p class="font-headline-md text-headline-md text-on-background">Ate well</p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant">Veggie tagine & fruit</p>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-lg fade-up border border-surface-container flex flex-col gap-sm">
+        <div class="flex items-center justify-between">
+          <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1">bedtime</span>
+          <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Nap</span>
+        </div>
+        <p class="font-headline-md text-headline-md text-on-background">1h 20m</p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant">Rested at 13:00</p>
+      </div>
+      <div class="bg-secondary-container rounded-xl p-lg fade-up flex flex-col gap-sm">
+        <div class="flex items-center justify-between">
+          <span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings:'FILL' 1">directions_run</span>
+          <span class="font-label-sm text-label-sm text-on-secondary-container uppercase tracking-wider">Activity</span>
+        </div>
+        <p class="font-headline-md text-headline-md text-on-background">Outdoor play</p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant">45 min in the garden</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+
+      <!-- Child Profile Card -->
+      <section class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-lg border border-surface-container shadow-sm fade-up">
+        <div class="flex flex-col items-center text-center gap-md">
+          <div class="relative">
+            <div class="w-24 h-24 rounded-full overflow-hidden ring-4 ring-secondary-container">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpSRPXyR66DXP3hltkQ6konW3zHDmww3xUHlMqDNextd_XC5iUlfRcR6N4ryMW-Dzcb8QtOWBCL45rnhIRuawu4dgF9ZcATXJDnBlBRU3hJeNISf-Bt9SORH2qJpr_ckrxSgzn7v26BQOakEEv28B3jiCX5t2FQcHDeL_yYeQrwsTKuUBgkL8a-lym__1E-5B-Fshs3JoBW5XKXGu4ofLWpWOzCwRa1rd-Q3ZNucBXqriVWTXxmalXkrPkCKYkDXqHuFlVKLWjbtQ" alt="Leo" class="w-full h-full object-cover"/>
+            </div>
+            <div class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-green-500 border-2 border-white flex items-center justify-center">
+              <span class="text-white text-xs">✓</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-headline-md text-headline-md">Leo Beaumont</h3>
+            <p class="font-label-sm text-label-sm text-on-surface-variant mt-xs">Les Grands · Age 4</p>
+            <p class="font-label-sm text-label-sm text-primary mt-xs">Lead: Ms. Clara Fontaine</p>
+          </div>
+          <div class="w-full border-t border-outline-variant pt-md grid grid-cols-2 gap-sm text-left">
+            <div>
+              <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Enrolled</p>
+              <p class="font-body-md text-body-md font-semibold mt-xs">Sept 2022</p>
+            </div>
+            <div>
+              <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Group</p>
+              <p class="font-body-md text-body-md font-semibold mt-xs">Étoiles ✨</p>
+            </div>
+            <div>
+              <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Attendance</p>
+              <p class="font-body-md text-body-md font-semibold mt-xs text-green-600">96.4%</p>
+            </div>
+            <div>
+              <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Next report</p>
+              <p class="font-body-md text-body-md font-semibold mt-xs">Jun 20, 2026</p>
+            </div>
+          </div>
+          <a href="progress.html" class="w-full text-center bg-primary text-on-primary rounded-full py-sm font-label-sm text-label-sm hover:opacity-90 transition-opacity">
+            View Full Progress Report
+          </a>
+        </div>
+      </section>
+
+      <!-- Today's Schedule + Activity Feed -->
+      <div class="lg:col-span-8 flex flex-col gap-gutter">
+
+        <!-- Today's Schedule -->
+        <section class="bg-surface-container-lowest rounded-xl p-lg border border-surface-container shadow-sm fade-up">
+          <div class="flex items-center justify-between mb-lg">
+            <h3 class="font-headline-md text-headline-md">Today's Schedule</h3>
+            <a href="childs-day.html" class="text-primary font-label-sm text-label-sm flex items-center gap-xs hover:gap-sm transition-all">
+              Full day <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+          <div class="relative">
+            <div class="absolute left-[72px] top-0 bottom-0 w-px bg-outline-variant"></div>
+            <div class="flex flex-col gap-md">
+              <!-- Past -->
+              <div class="flex items-start gap-md opacity-50">
+                <span class="font-label-sm text-label-sm text-on-surface-variant w-14 text-right pt-1 shrink-0">08:30</span>
+                <div class="w-3 h-3 rounded-full bg-outline-variant mt-1.5 shrink-0 z-10"></div>
+                <div class="flex-1">
+                  <p class="font-body-md text-body-md font-semibold">Morning Welcome Circle</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">Greetings, weather chart, calendar</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-md opacity-50">
+                <span class="font-label-sm text-label-sm text-on-surface-variant w-14 text-right pt-1 shrink-0">09:15</span>
+                <div class="w-3 h-3 rounded-full bg-outline-variant mt-1.5 shrink-0 z-10"></div>
+                <div class="flex-1">
+                  <p class="font-body-md text-body-md font-semibold">Atelier Créatif</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">Watercolour painting · Spring theme</p>
+                </div>
+              </div>
+              <!-- Current -->
+              <div class="flex items-start gap-md">
+                <span class="font-label-sm text-label-sm text-primary w-14 text-right pt-1 shrink-0 font-bold">Now</span>
+                <div class="w-3 h-3 rounded-full bg-primary mt-1.5 shrink-0 z-10 ring-4 ring-primary/20"></div>
+                <div class="flex-1 bg-primary-container rounded-lg p-sm">
+                  <p class="font-body-md text-body-md font-semibold text-primary">Outdoor Garden Play</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">Gross motor · Nature discovery</p>
+                </div>
+              </div>
+              <!-- Future -->
+              <div class="flex items-start gap-md">
+                <span class="font-label-sm text-label-sm text-on-surface-variant w-14 text-right pt-1 shrink-0">13:00</span>
+                <div class="w-3 h-3 rounded-full bg-surface-container mt-1.5 shrink-0 z-10 border border-outline-variant"></div>
+                <div class="flex-1">
+                  <p class="font-body-md text-body-md font-semibold">Lunch & Rest Time</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">Warm meal + quiet rest period</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-md">
+                <span class="font-label-sm text-label-sm text-on-surface-variant w-14 text-right pt-1 shrink-0">15:00</span>
+                <div class="w-3 h-3 rounded-full bg-surface-container mt-1.5 shrink-0 z-10 border border-outline-variant"></div>
+                <div class="flex-1">
+                  <p class="font-body-md text-body-md font-semibold">Story & Language Session</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">French & English bilingual stories</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-md">
+                <span class="font-label-sm text-label-sm text-on-surface-variant w-14 text-right pt-1 shrink-0">16:30</span>
+                <div class="w-3 h-3 rounded-full bg-surface-container mt-1.5 shrink-0 z-10 border border-outline-variant"></div>
+                <div class="flex-1">
+                  <p class="font-body-md text-body-md font-semibold">Pick-up Time</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">End of day handover with teacher</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="bg-surface-container-lowest rounded-xl p-lg border border-surface-container shadow-sm fade-up">
+          <div class="flex items-center justify-between mb-lg">
+            <h3 class="font-headline-md text-headline-md">Recent Activity</h3>
+            <a href="progress.html" class="text-primary font-label-sm text-label-sm flex items-center gap-xs hover:gap-sm transition-all">
+              All reports <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+          <div class="flex flex-col gap-md">
+            <div class="flex gap-md items-start">
+              <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings:'FILL' 1">palette</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start justify-between">
+                  <p class="font-body-md text-body-md font-semibold">New artwork added</p>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 ml-sm">Today, 09:40</span>
+                </div>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">Leo's watercolour painting from Atelier session</p>
+              </div>
+            </div>
+            <div class="flex gap-md items-start">
+              <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1">analytics</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start justify-between">
+                  <p class="font-body-md text-body-md font-semibold">Progress milestone reached</p>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 ml-sm">Yesterday</span>
+                </div>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">Leo counted to 20 independently for the first time!</p>
+              </div>
+            </div>
+            <div class="flex gap-md items-start">
+              <div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings:'FILL' 1">chat_bubble</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start justify-between">
+                  <p class="font-body-md text-body-md font-semibold">Message from Ms. Clara</p>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 ml-sm">Mon 12 May</span>
+                </div>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">Reminder about the Spring Festival on June 6th</p>
+              </div>
+            </div>
+            <div class="flex gap-md items-start">
+              <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-on-surface-variant text-sm" style="font-variation-settings:'FILL' 1">payments</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-start justify-between">
+                  <p class="font-body-md text-body-md font-semibold">Invoice paid</p>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 ml-sm">May 1</span>
+                </div>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">May 2026 tuition — €1,450 confirmed</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Upcoming Events Strip -->
+      <section class="lg:col-span-12 fade-up">
+        <div class="flex items-center justify-between mb-lg">
+          <h3 class="font-headline-md text-headline-md">Upcoming Events</h3>
+          <a href="calendar.html" class="text-primary font-label-sm text-label-sm flex items-center gap-xs hover:gap-sm transition-all">
+            Full calendar <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <div class="bg-surface-container-lowest rounded-xl p-lg border border-surface-container shadow-sm flex gap-md items-start">
+            <div class="bg-primary-container rounded-lg px-md py-sm text-center shrink-0 min-w-[56px]">
+              <p class="font-label-sm text-label-sm text-primary uppercase">Jun</p>
+              <p class="font-display-lg-mobile text-display-lg-mobile text-on-background font-bold leading-none">6</p>
+            </div>
+            <div>
+              <p class="font-body-md text-body-md font-semibold">Spring Festival 🌸</p>
+              <p class="font-label-sm text-label-sm text-on-surface-variant mt-xs">10:00 – 13:00 · All families welcome</p>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-lg border border-surface-container shadow-sm flex gap-md items-start">
+            <div class="bg-tertiary-container rounded-lg px-md py-sm text-center shrink-0 min-w-[56px]">
+              <p class="font-label-sm text-label-sm text-tertiary uppercase">Jun</p>
+              <p class="font-display-lg-mobile text-display-lg-mobile text-on-background font-bold leading-none">20</p>
+            </div>
+            <div>
+              <p class="font-body-md text-body-md font-semibold">End-of-Term Reports</p>
+              <p class="font-label-sm text-label-sm text-on-surface-variant mt-xs">Digital delivery to all parents</p>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-lg border border-surface-container shadow-sm flex gap-md items-start">
+            <div class="bg-secondary-container rounded-lg px-md py-sm text-center shrink-0 min-w-[56px]">
+              <p class="font-label-sm text-label-sm text-on-secondary-container uppercase">Jun</p>
+              <p class="font-display-lg-mobile text-display-lg-mobile text-on-background font-bold leading-none">27</p>
+            </div>
+            <div>
+              <p class="font-body-md text-body-md font-semibold">Summer Break Begins</p>
+              <p class="font-label-sm text-label-sm text-on-surface-variant mt-xs">Last day of the 2025–26 year</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<!-- Mobile BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface/80 backdrop-blur-xl flex justify-around items-center h-20 z-50 px-margin-mobile">
+  <a href="overview.html" class="flex flex-col items-center gap-xs text-primary">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">dashboard</span>
+    <span class="font-label-sm text-[10px] font-bold">Overview</span>
+  </a>
+  <a href="childs-day.html" class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">auto_stories</span>
+    <span class="font-label-sm text-[10px]">Today</span>
+  </a>
+  <a href="progress.html" class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">analytics</span>
+    <span class="font-label-sm text-[10px]">Progress</span>
+  </a>
+  <a href="calendar.html" class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">calendar_today</span>
+    <span class="font-label-sm text-[10px]">Calendar</span>
+  </a>
+  <a href="messages.html" class="flex flex-col items-center gap-xs text-on-surface-variant">
+    <span class="material-symbols-outlined">chat_bubble</span>
+    <span class="font-label-sm text-[10px]">Chat</span>
+  </a>
+</nav>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
